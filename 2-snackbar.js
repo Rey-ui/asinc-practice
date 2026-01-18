@@ -1,0 +1,2 @@
+import"./assets/style-Cr3zpccY.js";import{i as o}from"./assets/vendor-BbbuE1sJ.js";const s=document.querySelector(".form");s.addEventListener("submit",c);function c(i){i.preventDefault();const r=s.elements,t=r.delay.value,n=[...r.state].find(e=>e.checked).value;new Promise((e,m)=>{setTimeout(()=>{if(n=="fulfilled")return e(`✅ Fulfilled promise in ${t}ms`);m(`❌ Rejected promise in ${t}ms`)},t)}).then(e=>o.success({title:"OK",message:e})).catch(e=>o.error({title:"Error",message:e})).finally(()=>{s.reset()})}
+//# sourceMappingURL=2-snackbar.js.map
